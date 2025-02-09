@@ -22,14 +22,14 @@ Login view
 Alowws users to log in with a username and password
 
 Signup view
-Allow new users to registes (username, password, emailm date of birth)
+Allow new users to register (username, password, emailm date of birth)
 
 Profile View
 Dispaly user registration details
 Allows users to update their info(username, password, email, date of birth)
-Display favorite moivies
+Display favorite movies
 Allows users to remove a movie from their list of favorites
-Allow existing users to dergister
+Allow existing users to deregister
 
 --Teacnical Requirements
 The application must be a singele-page application(SPA)
@@ -40,4 +40,4 @@ The application must be written using the React library and in ES2015+
 The application must use Bootstrap as UI library for styling and responsivness
 The application must contain function concept
 The application must be located online
-The application must use React Redux state management of at least one feature(i.e., filtering movies)
+The application must use React Redux state management of at least one feature(i.e., filtering)
