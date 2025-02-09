@@ -18738,19 +18738,19 @@ const MainView = ()=>{
         {
             id: 1,
             title: "Inside Out",
-            image: "C:\Users\bilja\OneDrive\Desktop\p_insideout_19751_af12286c.jpeg",
+            image: "https://lumiere-a.akamaihd.net/v1/images/p_insideout_19751_af12286c.jpeg",
             director: "Pete Docter"
         },
         {
             id: 2,
             title: "Toy Story",
-            image: "C:\Users\bilja\OneDrive\Desktop\stone-hood-ZiKTSf8BFj0-unsplash.jpg",
+            image: "https://lumiere-a.akamaihd.net/v1/images/p_toystory3_19639_3c584e1f.jpeg",
             director: "John Lasseter"
         },
         {
             id: 3,
             title: "Elemental",
-            image: "C:\Users\bilja\OneDrive\Desktop\p_disneyplusoriginals_elemental_poster_rebrand_a0788af2.jpeg",
+            image: "https://lumiere-a.akamaihd.net/v1/images/p_disneyplusoriginals_elemental_poster_rebrand_a0788af2.jpeg",
             director: "Peter Sohn"
         }
     ]);
@@ -18785,7 +18785,7 @@ const MainView = ()=>{
         columnNumber: 9
     }, undefined);
 };
-_s(MainView, "OVMSXRA920waUeTqbdYBaieL7MI=");
+_s(MainView, "v/AnWi0CFT3yVsyp+tQkLslq1Bs=");
 _c = MainView;
 var _c;
 $RefreshReg$(_c, "MainView");
