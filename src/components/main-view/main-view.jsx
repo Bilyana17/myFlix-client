@@ -1,30 +1,29 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { MovieCard } from "../movie-card/movie-card";
 import { MovieView } from "../movie-view/movie-view";
 
 export const MainView = () => {
-    const [movies, setMovies] = useState([
-        {
-          id: 1, 
-          title: "Inside Out",
-          image: "https://lumiere-a.akamaihd.net/v1/images/p_insideout_19751_af12286c.jpeg",
-          director: "Pete Docter"
-        },
-        {
-          id: 2, 
-          title: "Toy Story",
-          image: "https://lumiere-a.akamaihd.net/v1/images/p_toystory3_19639_3c584e1f.jpeg",
-          director: "John Lasseter"
-        },
-        {
-          id: 3, 
-          title: "Elemental",
-          image: "https://lumiere-a.akamaihd.net/v1/images/p_disneyplusoriginals_elemental_poster_rebrand_a0788af2.jpeg",
-          director: "Peter Sohn"
-        }
-    ]);
+    const [movies, setMovies] = useState([]);
 
     const [selectedMovie, setSelectedMovie] = useState(null);
+
+    useEffect(() => {
+        fetch("/movieshttps://your-heroku-app-name.herokuapp.com/movies")
+        .then((response) => response.json())
+        .then((data) => {
+            const moviesFromApi = data.map((movie) => {
+                return {
+                    id: movie.id,
+                    title: movie.title,
+                    Image: movie.image,
+                    description: movie.description,
+                    director: movie.director,
+                    genre: movie.genre,
+                };
+            });
+            setMovies(moviesFromApi);
+        })
+    }, []);
 
     if (selectedMovie) {
         return (
