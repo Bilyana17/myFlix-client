@@ -8,17 +8,17 @@ export const MainView = () => {
     const [selectedMovie, setSelectedMovie] = useState(null);
 
     useEffect(() => {
-        fetch("https://dashboard.heroku.com/apps/movie-api/movies")
+        fetch("/movieshttps://your-heroku-app-name.herokuapp.com/movies")
         .then((response) => response.json())
         .then((data) => {
-            const moviesFromApi = movies.map((movie) => {
+            const moviesFromApi = data.map((movie) => {
                 return {
                     id: movie.id,
                     title: movie.title,
                     Image: movie.image,
                     description: movie.description,
                     director: movie.director,
-                    Genre: NavigationHistoryEntry.genre,
+                    genre: movie.genre,
                 };
             });
             setMovies(moviesFromApi);
