@@ -16,11 +16,11 @@ export const SignupView = () => {
             Birthday: birthday
         };
 
-        fetch("https://your-heroku-app-name.herokuapp.com/signup", {
+        fetch("https://movie-api-63d2d5b8fdc1.herokuapp.com/signup", {
             method: "POST",
             body: JSON.stringify(data),
             headers: {
-                "Content-Type": "app;ication/json"
+                "Content-Type": "application/json"
             }
         }) .then((response) => {
             if (response.ok) {
