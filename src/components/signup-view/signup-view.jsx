@@ -29,6 +29,10 @@ export const SignupView = () => {
             } else {
                 alert("Signup failed");
             }
+        })
+        .catch((error) => {
+            console.error("Error during signup:", error);
+            alert("An error occurred. Please try again.");
         });
     };
 
