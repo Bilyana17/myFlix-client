@@ -42,13 +42,13 @@ export const MainView = () => {
             {!user ? (
                 <Col md={5}>
                     <LoginView onLoggedIn={(user) => setUser(user)} />
-                    or
+                    <p>or</p>
                     <SignupView/>
                 </Col>
             ) : selectedMovie ? (
                 <Col md={8} style={{ border: "1px solid black"}}>
                     <MovieView
-                    Style={{ border: "1px solid green"}}
+                    style={{ border: "1px solid green"}}
                     movie={selectedMovie}
                     onBackClick={() => setSelectedMovie(null)}
                     />
